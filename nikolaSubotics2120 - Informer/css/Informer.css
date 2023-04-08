@@ -1,0 +1,758 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;}
+/* div{
+    border: solid black thin;
+    
+} */
+body{
+    background-color: white;
+}
+
+.container{
+   display: flex;
+   width: 80%; 
+   margin:0px auto;
+   flex-wrap: wrap;
+}
+.header{
+    height: 80px;
+    background-color: #e6272a;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    position: relative;
+    /* flex-wrap: wrap; */
+    
+}
+
+.header i {
+    display: none;
+}
+
+.logo{
+    flex-basis: 20%;
+}
+.navigacioni_meni{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+}
+.navigacioni_meni ul{
+    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+
+.navigacioni_meni_telefon {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+
+.navigacioni_meni_telefon ul {
+    list-style: none;
+}
+
+.navigacioni_meni_telefon li {
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    padding-left: 15px;
+}
+
+.navigacioni_meni_telefon a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+/* ul li{
+    /* flex-basis: 150px;   */
+    
+/* }  */
+.navigacioni_meni ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    /* padding: 10px; */
+    font-size: 19px;
+    /* margin-right: 20px; */
+}
+.navigacioni_meni ul li a:hover{
+    background-color: none;
+    text-decoration-line: underline;
+    
+}
+.centralni_sadrzaj{
+    background-color: white;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    /* border:solid black thin; */
+}
+.centralni_levo{
+    flex-direction: column;
+    display: flex;
+    width: 70%;
+    /* flex-basis: 20%; */
+    /* border:solid black thin; */
+}
+.centralni_desno{
+    flex-direction: column;
+    display: flex;
+    width: 29%;
+    /* background-color: red; */
+    align-items: flex-start;
+}
+.velika_vest{
+    /* flex-basis: 100%; */
+    /* background-image: url(/images/sport.jpg); */
+    display: flex;
+    width: 100%;
+}
+.sport{
+    width: 100%;
+}
+/* .sport h2{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-image: url(/images/sport.jpg);
+    background-size: cover;
+} */
+.sport img{
+    width: 100%;
+}
+
+.dupla_vest{
+    display: flex;
+    flex-basis: 100%;
+}
+.leva_vest{
+    width: 50%;
+}
+.leva_vest img{
+    width: 100%;
+}
+.desna_vest{
+    width: 50%;
+}
+.desna_vest img{
+    width: 100%;
+}
+
+
+.druga_velika_vest{
+    /* display: flex; */
+    flex-basis: 100%;
+}
+.druga_velika_vest img{
+    width: 100%;
+}
+.druge_duple_vesti{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+.druga_leva{
+    width: 30%;
+}
+.druga_leva img{
+    width: 100%;
+}
+.druga_desna{
+    width: 30%;
+}
+.druga_desna img{
+    width: 100%;
+}
+.treca{
+    width: 30%;
+}
+.treca img{
+    width: 100%;
+}
+.cetiri{
+    width: 30%;
+}
+.cetiri img{
+    width: 100%;
+}
+.pet{
+    width: 30%;
+}
+.pet img{
+    width: 100%;
+}
+.sest{
+    width: 30%;
+}
+.sest img{
+    width: 100%;
+}
+.tri_slike{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    background-color: red;
+    padding: 15px 15px;
+}
+.prva_slika{
+    width: 30%;
+}
+.prva_slika img{
+    width: 100%;
+}
+.druga_slika{
+    width: 30%;
+}
+.druga_slika img{
+    width: 100%;
+}
+.treca_slika{
+    width: 30%;
+}
+.treca_slika img{
+    width: 100%;
+}
+.opet_tri{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+.opet_1{
+    width: 30%;
+}
+.opet_1 img{
+    width: 100%;
+}
+.opet_2{
+    width: 30%;
+}
+.opet_2 img{
+    width: 100%;
+}
+.opet_3{
+    width: 30%;
+}
+.opet_3 img{
+    width: 100%;
+}
+.strip{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+.strip img{
+    width: 100%;
+    height: 300px;
+}
+.dve_desno{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+.gore_desno{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.gore_desno img{
+    width: 100%;
+}
+.dole_desno{
+    width: 100%;
+}
+.dole_desno img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.komentari {
+    width: 100%;
+    height: 320px;
+}
+
+.komentari p {
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    width: 31%;
+}
+.sportisti_vandalizam{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sportisti{
+    width: 100%;
+}
+.sportisti img{
+    width: 100%;
+}
+.vandalizam{
+    width: 100%;
+}
+.vandalizam img{
+    width: 100%;
+}
+h2{
+    margin-top: 20px;
+}
+.stampano_izdanje{
+    display: flex;
+    /* flex-basis: 100%; */
+    /* height: 50px; */
+}
+.stampano_izdanje img{
+    margin-left: 5px;
+}
+.kontenjar{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+.kontenjar_jedan{
+    width: 23%;
+}
+.kontenjar_jedan img{
+    width: 100%;
+}
+.kontenjar_dva{
+    width: 23%;
+}
+.kontenjar_dva img{
+    width: 100%;
+}
+.kontenjar_tri{
+    width: 23%;
+}
+.kontenjar_tri img{
+    width: 100%;
+}
+.kontenjar_cetri{
+    width: 23%;
+}
+.kontenjar_cetri img{
+    width: 100%;
+}
+.kontenjar2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.kont1{
+    width: 31%;
+}
+.kont1 img{
+    width: 100%;
+}
+.kont2{
+    width: 31%;
+}
+.kont2 img{
+    width: 100%;
+}
+.kont3{
+    width: 31%;
+}
+.kont3 img{
+    width: 100%;
+}
+.foater{
+    height: 80px;
+    background-color: #e6272a;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo2{
+    display: flex;
+    flex-basis: 20%;
+}
+.logo2 img{
+    flex-basis: 100%;
+}
+.navigacioni_meni2{
+    display: flex;
+    flex-basis: 80%;
+    flex-wrap: wrap;
+}
+.navigacioni_meni2 ul{
+    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    flex-basis: 100%;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+/* ul li{
+    /* flex-basis: 150px;   */
+    
+/* }  */
+.navigacioni_meni2 ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px;
+    /* font-size: 19px; */
+    /* margin-right: 20px; */
+}
+.navigacioni_meni2 ul li a:hover{
+    background-color: none;
+    text-decoration-line: underline;
+    
+}
+.marketing{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.web{
+    width: 50%;
+}
+.marketing_pc{
+    width: 20%;
+}
+.marketing_pc img{
+    width: 100%;
+}
+.marketing2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.web2{
+    width: 50%;
+}
+.marketing_pc2{
+    width: 20%;
+}
+.marketing_pc2 img{
+    width: 100%;
+}
+samp{
+    color: red;
+    font-size: 20px;
+}
+
+
+.centar_levo{
+    flex-direction: column;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    width: 70%;
+}
+.impresum{
+    width: 100%;
+}
+.pocetak{
+    width: 100%;
+    padding-bottom: 25px;
+}
+.c2{
+    display: flex;
+    width: 100%;
+}
+.cl{
+    width: 50%;
+}
+.cd{
+    width: 50%;
+}
+.centar_desno{
+    flex-direction: column;
+    display: flex;
+    width: 30%;
+}
+.centralni_sadrzaj h3{
+    margin: 16px,0px,8px;
+    text-decoration: underline;
+}
+p{
+    padding: 5px;
+}
+.c2 .ime{
+    font-weight: bold;
+}
+span{
+    color: red;
+}
+.slika_tekst{
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-basis: 100%; */
+    justify-content: space-between;
+}
+.slika_bez_teksta{
+    width: 40%;
+    /* height: 100%; */
+}
+.slika_bez_teksta img{
+    width: 100%;
+    height: 80%;
+}
+.tekst_bez_slike{
+    width: 60%;
+}
+.pisite_nam_naslov{
+    display: flex;
+    flex-basis: 100%;
+}
+.mnogo_texta{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+i{
+    color: white;
+}
+/* .sport{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 50px;
+    height: 300px;
+    background-image: url(../images/sport.jpg);
+}
+.sport p{
+    padding: 10px;
+    border-radius: 10px;
+} */
+
+
+.hide {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1080px)
+{
+    .container{
+        flex-basis: 100%;
+    }
+
+    .header {
+        align-items: center;
+    }
+
+    .header i {
+        display: block;
+        font-size: 30px;
+        padding-right: 10px;
+    }
+
+    .centar_levo{
+        flex-basis: 50%;
+    }
+    .centralni_desno{
+        flex-basis: 50%;
+        padding-left: 5px;
+    }
+    .gore_desno, .dole_desno{
+        flex-basis: 50%;
+        padding: 5px;
+    }
+    *{
+        font-size: 10px;
+    }
+    .sportisti, .vandalizam{
+        flex-basis: 50%;
+        padding: 5px;
+    }
+
+    .navigacioni_meni{
+        display: none;
+    }
+    .stampano_izdanje{
+        display: flex;
+    }
+    .stampano_izdanje img{
+        flex-basis: 100%;
+    }
+
+
+    .foater{
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    .logo2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        height: 40%;
+    }
+    .logo2 img{
+        height: 100%;
+    }
+    .navigacioni_meni2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+    .navigacioni_meni2 ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+    .kontenjar{
+        flex-wrap: wrap;
+        /* padding: 3px; */
+    }
+
+    .kontenjar_jedan, .kontenjar_dva, .kontenjar_tri, .kontenjar_cetri{
+        flex-basis: 50%;
+        padding: 3px;
+    }
+    .dupla_vest{
+        padding-top: 10px;
+    }
+    .leva_vest{
+        padding-right: 5px;
+    }
+    .marketing{
+        padding-bottom: 15px;
+    }
+    .c2{
+        flex-wrap: wrap;
+    }
+    .cl, .cd{
+        flex-basis: 100%;
+    }
+    .druge_duple_vesti{
+        flex-wrap: wrap;
+    }
+    .druga_leva, .druga_desna,.treca, .cetiri, .pet, .sest{
+        padding: 10px;
+        flex-basis: 50%;
+    }
+    .mogo_texta p{
+        font-weight: bold;
+    }
+    .impresum p{
+        font-size: large;
+    }
+    .marketing p, .marketing2 p{
+        font-size: large;
+    }
+}
+
+
+@media screen and (max-width: 650px)
+{
+    .container{
+        width: 90%;
+    }
+    .centralni_sadrzaj{
+        flex-wrap: wrap;
+    }
+    .centralni_levo{
+        flex-basis: 100%;
+       
+    }
+    .centralni_desno{
+        flex-basis: 100%;
+    }
+    .centar_desno{
+        flex-basis: 100%;
+    }
+    .centar_levo{
+        flex-basis: 100%;
+    }
+
+
+    .kontenjar_jedan img{
+        flex-basis: 45%;
+    }
+    .kontenjar_jedan h3{
+        flex-basis: 45%;
+    }
+    
+    .druga_leva, .druga_desna, .treca, .cetiri, .pet, .sest{
+        flex-basis: 50%;
+    }
+    .tri_slike{
+        flex-wrap: wrap;
+    }
+    .prva_slika, .druga_slika, .treca_slika{
+        flex-basis: 100%;
+    }
+    .kontenjar{
+        flex-wrap: wrap;
+    }
+    .kontenjar_jedan, .kontenjar_dva,.kontenjar_tri, .kontenjar_cetri{
+        flex-basis: 100%;
+    }
+    .logo{
+        flex-basis: 95%;
+    }
+    .navigacioni_meni{
+        flex-basis: 5%;
+    }
+    .kontenjar2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .kont1, .kont2, .kont3{
+        flex-basis: 100%;
+    }
+
+
+
+    .foater{
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    .logo2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        height: 40%;
+    }
+    .logo2 img{
+        height: 100%;
+    }
+    .navigacioni_meni2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+    .navigacioni_meni2 ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+    
+    .druga_leva, .druga_leva,.treca, .cetiri, .pet, .sest{
+        padding: 10px;
+    }
+    .mogo_texta p{
+        font-size: large;
+    }
+    .impresum p{
+        font-size: large;
+    }
+
+}
